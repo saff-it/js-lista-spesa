@@ -11,10 +11,7 @@ const groceryList = [
 ]
 
 
-// for ( let i = 0; i < groceryList.length; i++) {
-//     console.log(groceryList[i]);
-
-// }
+const groceryContainer = document.querySelector('ul.gr-list-cont');
 
 let i = 0;
 
@@ -22,4 +19,10 @@ while ( i < groceryList.length){
     console.log(groceryList[i]);
 
     i++;
+
+    let groceryItem = document.createElement('li');
+    groceryItem.innerHTML = groceryList[i];
+
+    groceryContainer.append(groceryItem);
+
 }
