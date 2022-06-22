@@ -18,10 +18,10 @@ let i = 0;
 while ( i < groceryList.length ){
     console.log(groceryList[i]);
 
-    i++;
+    const groceryItem = document.createElement('li');
+    groceryItem.innerHTML = groceryList[i];
 
-    let groceryItem = document.createElement('li');
-    groceryItem.innerHTML = groceryList[i-1];
+    i++;
 
     groceryContainer.append(groceryItem);
 
